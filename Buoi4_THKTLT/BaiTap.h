@@ -3,6 +3,8 @@
 
 void bai1();
 
+void bai2();
+
 
 
 #endif

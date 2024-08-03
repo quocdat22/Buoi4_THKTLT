@@ -3,10 +3,14 @@
 
 #include "BaiTap.h"
 
+
+
 int main()
 {
 
-    bai1();
+    //bai1();
+
+    bai2();
 
     return 0;
 }
