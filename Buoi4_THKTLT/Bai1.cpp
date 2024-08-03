@@ -126,6 +126,14 @@ double S_iterative16(int n) {
     return sum;
 }
 
+double sum_recursive17(int n) {
+    if (n == 1)
+        return (1 + sqrt(1 + 2)) / (2 + sqrt(factorial1(3)));
+    double numerator = n + sqrt(n + n + 1);
+    double denominator = (n + 1) + sqrt(factorial1(n + 2));
+    return numerator / denominator + sum_recursive(n - 1);
+}
+
 
 void bai1(){
     /*int n = 26; 
@@ -134,7 +142,7 @@ void bai1(){
     int n;
     inputN(n);
 
-    double result = S_iterative16(n);
+    double result = sum_recursive17(n);
     printf("S(%d) = %lf\n", n, result);
 
 
