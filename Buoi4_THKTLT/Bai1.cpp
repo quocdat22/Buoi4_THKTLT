@@ -35,13 +35,35 @@ double sum_iterative2(int n) {
     return total;
 }
 
+double S_recursive(int n) {
+    if (n == 1) {
+        return 1.0 / 2;
+    }
+    else {
+        return (double)n / (n + 1) + S_recursive(n - 1);
+    }
+}
+double S_iterative(int n) {
+    double sum = 0.0;
+    for (int i = 1; i <= n; i++) {
+        sum += (double)i / (i + 1);
+    }
+    return sum;
+}
 
 
 
 
 void bai1(){
-    int n = 26; 
-    printf("Tổng với %d dấu căn là %.2f\n", n, sum_iterative2(n));
+    /*int n = 26; 
+    printf("Tổng với %d dấu căn là %.2f\n", n, sum_iterative2(n));*/
+
+    int n;
+    printf("Enter the value of n: ");
+    scanf_s("%d", &n);
+
+    double result = S_recursive(n);
+    printf("S(%d) = %lf\n", n, result);
 
     return;
 }
