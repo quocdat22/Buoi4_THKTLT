@@ -12,7 +12,10 @@ int main()
 
     //bai2();
 
-    bai3();
+    //bai3();
+
+    bai4();
+
     return 0;
 }
 
