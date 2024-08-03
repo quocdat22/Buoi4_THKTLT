@@ -18,7 +18,11 @@ int main()
 
     //bai5();
 
-    bai6();
+    //bai6();
+
+    //bai7();
+
+    bai8();
 
     return 0;
 }
