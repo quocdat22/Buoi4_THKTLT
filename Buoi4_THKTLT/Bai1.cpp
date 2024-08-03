@@ -67,10 +67,29 @@ double S_iterative14(int n) {
     return sum;
 }
 
+// Recursive function to calculate S(n)
+int S_recursive15(int n) {
+    if (n == 1) {
+        return 1 * 2;
+    }
+    else {
+        return n * (n + 1) + S_recursive(n - 1);
+    }
+}
+int S_iterative15(int n) {
+    int sum = 0;
+    for (int i = 1; i <= n; i++) {
+        sum += i * (i + 1);
+    }
+    return sum;
+}
+
 void inputN(int& n) {
 	printf("Enter the value of n: ");
 	scanf_s("%d", &n);
 }
+
+
 
 void bai1(){
     /*int n = 26; 
@@ -79,7 +98,7 @@ void bai1(){
     int n;
     inputN(n);
 
-    double result = S_iterative(n);
+    double result = S_recursive15(n);
     printf("S(%d) = %lf\n", n, result);
 
     return;
