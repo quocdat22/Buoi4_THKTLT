@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="Bai1.cpp" />
     <ClCompile Include="Bai2.cpp" />
+    <ClCompile Include="Bai3.cpp" />
     <ClCompile Include="Buoi4_THKTLT.cpp">
       <SDLCheck Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</SDLCheck>
     </ClCompile>

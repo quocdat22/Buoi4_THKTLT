@@ -10,8 +10,9 @@ int main()
 
     //bai1();
 
-    bai2();
+    //bai2();
 
+    bai3();
     return 0;
 }
 

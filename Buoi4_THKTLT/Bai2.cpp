@@ -11,6 +11,7 @@ int UCLN(int a, int b) {
 }
 
 
+
 void nhapAB(int &a, int &b) {
     
 	printf("Nhap a: ");
@@ -20,6 +21,10 @@ void nhapAB(int &a, int &b) {
 	
 	return;
 }
+
+
+
+
 void bai2() {
     int a, b;
     nhapAB(a, b);
