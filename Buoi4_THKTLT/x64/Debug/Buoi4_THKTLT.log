@@ -1,13 +1,2 @@
-﻿  Bai1.cpp
-  Bai2.cpp
-C:\Users\datho\OneDrive\Documents\CNTT\Ky thuat lap trinh\thuc hanh\Buoi4_THKTLT\Buoi4_THKTLT\Bai1.cpp(76,28): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-C:\Users\datho\OneDrive\Documents\CNTT\Ky thuat lap trinh\thuc hanh\Buoi4_THKTLT\Buoi4_THKTLT\Bai1.cpp(131,56): warning C4244: 'argument': conversion from '__int64' to 'double', possible loss of data
-C:\Users\datho\OneDrive\Documents\CNTT\Ky thuat lap trinh\thuc hanh\Buoi4_THKTLT\Buoi4_THKTLT\Bai1.cpp(133,51): warning C4244: 'argument': conversion from '__int64' to 'double', possible loss of data
-  Bai3.cpp
-  Bai4.cpp
-  Bai5.cpp
-  Bai6.cpp
-  Bai7.cpp
-  Generating Code...
-  Buoi4_THKTLT.cpp
+﻿  Bai8.cpp
   Buoi4_THKTLT.vcxproj -> C:\Users\datho\OneDrive\Documents\CNTT\Ky thuat lap trinh\thuc hanh\Buoi4_THKTLT\x64\Debug\Buoi4_THKTLT.exe
