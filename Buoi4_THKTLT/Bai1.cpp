@@ -89,6 +89,42 @@ void inputN(int& n) {
 	scanf_s("%d", &n);
 }
 
+// Function to calculate factorial
+long long factorial1(int n) {
+    if (n == 0 || n == 1) {
+        return 1;
+    }
+    else {
+        return n * factorial1(n - 1);
+    }
+}
+// Recursive function to calculate S(n)
+double S_recursive16(int n) {
+    if (n == 1) {
+        return (1.0 * factorial1(2)) / (2 + sqrt(3));
+    }
+    else {
+        return (n * factorial1(n + 1)) / ((n + 1) + sqrt(n + 2)) + S_recursive(n - 1);
+    }
+}
+
+// Function to calculate factorial
+long long factorial2(int n) {
+    long long result = 1;
+    for (int i = 1; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+}
+
+// Iterative function to calculate S(n)
+double S_iterative16(int n) {
+    double sum = 0.0;
+    for (int i = 1; i <= n; i++) {
+        sum += (i * factorial2(i + 1)) / ((i + 1) + sqrt(i + 2));
+    }
+    return sum;
+}
 
 
 void bai1(){
@@ -98,8 +134,9 @@ void bai1(){
     int n;
     inputN(n);
 
-    double result = S_recursive15(n);
+    double result = S_iterative16(n);
     printf("S(%d) = %lf\n", n, result);
+
 
     return;
 }
