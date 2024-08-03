@@ -14,7 +14,11 @@ int main()
 
     //bai3();
 
-    bai4();
+    //bai4();
+
+    //bai5();
+
+    bai6();
 
     return 0;
 }

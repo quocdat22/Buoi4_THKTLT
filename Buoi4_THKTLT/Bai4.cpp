@@ -21,6 +21,8 @@ int An_b(int n) {
     return 2 * An_b(n - 1) + An_b(n - 2) - 3 * An_b(n - 3);
 }
 
+
+
 void bai4() {
 
     int n;

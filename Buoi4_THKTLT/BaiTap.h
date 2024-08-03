@@ -9,6 +9,9 @@ void bai3();
 
 void bai4();
 
+void bai5();
+
+void bai6();
 
 
 #endif
