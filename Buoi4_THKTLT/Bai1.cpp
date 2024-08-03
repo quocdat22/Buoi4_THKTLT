@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include"BaiTap.h"
+#include <math.h>
 
 int sum_recursive(int n) {
     // Trường hợp cơ sở
@@ -18,13 +19,29 @@ int sum_iterative(int n) {
     return total;
 }
 
+double sum_recursive2(int n) {
+    // Trường hợp cơ sở
+    if (n == 1) {
+        return sqrt(5);
+    }
+    // Trường hợp đệ quy
+    return sqrt(5) + sum_recursive(n - 1);
+}
+double sum_iterative2(int n) {
+    double total = 0;
+    for (int i = 0; i < n; i++) {
+        total += sqrt(5);
+    }
+    return total;
+}
+
 
 
 
 
 void bai1(){
-    int n = 5; // Bạn có thể thay đổi giá trị n để kiểm tra
-    printf("Tổng từ 1 đến %d là %d\n", n, sum_iterative(n));
+    int n = 26; 
+    printf("Tổng với %d dấu căn là %.2f\n", n, sum_iterative2(n));
 
     return;
 }
